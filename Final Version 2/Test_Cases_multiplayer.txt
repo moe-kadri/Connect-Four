@@ -1,0 +1,225 @@
+Connect Four Game Specification:
+*requires: input 1 or 0. 
+*effects: 1 enters the game, 0 exits the game.
+
+If the input was 1:
+-->requires: name of player 1 and name of player 2 as a char array without any spaces
+-->effects: game starts with player's one turn
+
+
+
+Alternating between player one first then player two:
+
+++++++++++++++++++++
+Test for horizontal
+
+10 Message: (INVALID INPUT PLEASE TRY AGAIN!) -- Note that this allows the players to continue the game normally --
+1 
+1
+2
+2
+3
+3
+4
+winner: first player
+
+1
+1
+2
+2
+3
+3
+5
+4
+5
+4
+winner: second player
+
+7
+7
+6
+6
+5
+5
+4
+winner: first player
+
+7
+7
+6
+6
+5
+5
+3
+4
+3
+4
+winner: second player
++++++++++++++++++++++
+
+Test for vertical:
+
+1
+2
+1
+2
+1
+2
+1
+winner: first player
+
+1
+2
+1
+2
+1
+2
+3
+2
+winner: second player
+
+1
+2
+2
+1
+2
+1
+2
+1
+2
+winner: first player
+++++++++++++++++++++
+
+Test for right oblique
+
+1
+2
+2
+3
+4
+3
+3
+5
+4
+4
+4
+winner: first player
+
+7
+1
+2
+2
+3
+4
+3
+3
+5
+4
+4
+4
+winner: second player
+
+4
+5
+5
+6
+7
+6
+6
+7
+7
+1
+7
+winner: first player
++++++++++++++++++++++
+
+Test for oblique for left:
+
+7
+6
+6
+5
+4
+5
+5
+3
+4
+4
+4
+winner: first player
+
+1
+7
+6
+6
+5
+4
+5
+5
+3
+4
+4
+4
+winner: second player
+
+4
+3
+3
+2
+1
+2
+2
+1
+1
+7
+1
+winner: first player
++++++++++++++++++++++
+
+1
+2
+1
+2
+2
+1
+3
+1
+7
+2
+1
+2
+2
+1
+5
+6
+6
+4
+4
+3
+3
+7
+7
+5
+7
+6
+5
+4
+3
+4
+5
+6
+3
+3
+5
+4
+4
+5
+6
+7
+6
+wait few minutes
+7
+winner: player one by less time
++++++++++++++++++++++++++++++++
+
+
